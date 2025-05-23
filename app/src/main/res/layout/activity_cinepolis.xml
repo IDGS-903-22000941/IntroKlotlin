@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCinepolis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".cine.Cinepolis">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="240dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Logo Cinépolis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinepolis12" />
+
+    <TextView
+        android:id="@+id/textViewNombreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Nombre:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Ingrese su nombre"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewNombreLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewNombreLabel" />
+
+    <TextView
+        android:id="@+id/textViewCompradoresLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Cantidad de\nCompradores:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNombreLabel" />
+
+    <EditText
+        android:id="@+id/editTextCompradores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Compradores"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewCompradoresLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewCompradoresLabel" />
+
+    <TextView
+        android:id="@+id/textViewTarjetaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Tarjeta Cineco:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewCompradoresLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCinecoSi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Si"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewTarjetaLabel"
+        app:layout_constraintStart_toEndOf="@id/textViewTarjetaLabel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCinecoNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="No"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewTarjetaLabel"
+        app:layout_constraintStart_toEndOf="@id/checkBoxCinecoSi" />
+
+    <TextView
+        android:id="@+id/textViewBoletosLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="Cantidad de\nBoletos:"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTarjetaLabel" />
+
+    <EditText
+        android:id="@+id/editTextBoletos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="Cantidad de boletos"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textColorHint="#CCCCCC"
+        android:background="@android:drawable/edit_text"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewBoletosLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewBoletosLabel" />
+
+    <TextView
+        android:id="@+id/textViewTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Boletos a Pagar"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextBoletos" />
+
+    <TextView
+        android:id="@+id/textViewResultadoPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="$xxx.xx"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTotalLabel" />
+
+    <!-- NUEVOS ELEMENTOS AGREGADOS -->
+
+    <!-- ScrollView para el detalle de la compra -->
+    <ScrollView
+        android:id="@+id/scrollViewDetalles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_background"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewResultadoPrecio">
+
+        <TextView
+            android:id="@+id/textViewDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:text="Aquí aparecerán los detalles de su compra..."
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </ScrollView>
+
+    <!-- Contenedor para los botones -->
+    <LinearLayout
+        android:id="@+id/linearLayoutBotones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#0923E5"
+            android:text="Calcular"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonLimpiar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#070707"
+            android:text="Limpiar"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

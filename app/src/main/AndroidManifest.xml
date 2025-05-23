@@ -13,8 +13,20 @@
         android:theme="@style/Theme.IntroKotlin903"
         tools:targetApi="31">
         <activity
-            android:name=".cinepolis.cinepolis"
+            android:name=".practica4.archivosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight"/>
+        <activity
+            android:name=".practica3.Ejemplo3Activity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".practica1.resultado"
             android:exported="false" />
+        <activity
+            android:name=".cine.Cinepolis"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".practica2.OperasActivity"
             android:exported="true"
@@ -36,7 +48,7 @@
         <activity
             android:name=".practica1.saludosactivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat"></activity>
+            android:theme="@style/Theme.AppCompat" />
     </application>
 
 </manifest>
